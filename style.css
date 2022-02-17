@@ -1,0 +1,33 @@
+.c-btn-primary{
+    border-radius: 20px;
+    /* background-color:   #6e7b97; */
+    background-color: #36cccc;
+    color: #fdfeff;
+    width: 150px;
+    height: 40px;
+    /* margin-left: 80px; */
+    font-weight: bold;
+   
+}
+.c-btn-primary2{
+    border-radius: 20px;
+    /* background-color:   #6e7b97; */
+    background-color: #36cccc;
+    color: #fdfeff;
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    /* margin-left: 20px; */
+   
+}
+.modulas{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.img1{
+      height:745px;
+  }
+/* 
+.increase{
+    width: 300px;
+} */
