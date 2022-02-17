@@ -17,7 +17,10 @@ document.getElementById('calculate-button').addEventListener('click',function(){
     const ExpenceTotal=document.getElementById('total-expenses');
     const previousExpenceAmount= ExpenceTotal.innerText;
 
-    //error handleing and total expences
+    //error handleing 
+    if (isNaN(incomeInput) || isNaN(foodAmount) || isNaN(rentAmount) || isNaN(clothAmount)){
+        alert("Please input a number");
+      }
     if(incomeInput< 0 || foodAmount<0 || rentAmount<0 || clothAmount<0 ){
         alert("Please input positive value");
     }
@@ -26,7 +29,7 @@ document.getElementById('calculate-button').addEventListener('click',function(){
         ExpenceTotal.innerText=newExpenceTotal;
     };
 
-    if(incomeInput<ExpenceTotal.innerText){
+    if(incomeInput<ExpenceTotal.innerText && ExpenceTotal.innerText>0 ){
         alert("Expences exceed your Income");
     }
     // error handleing and total balance
@@ -35,7 +38,6 @@ document.getElementById('calculate-button').addEventListener('click',function(){
     if(incomeInput>0 ){
         const newBalanceTotal=parseFloat(previousBalanceAmount)+parseFloat(incomeInput)-parseFloat(ExpenceTotal.innerText);
         BalanceTotal.innerText=newBalanceTotal;
-        console.log(BalanceTotal.innerText);
     };
 
     });
